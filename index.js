@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(reponse_a.checked === true ) 
         {
             console.log("C'est une mauvaise reponse")
-            document.getElementById('resultat1').textContent="c'est une mauvaise reponse"
+            document.getElementById('resultat1').textContent="C'est une mauvaise reponse !"
             document.getElementById('resultat1').style.color = "red"
-            resultat=0
+            resultat +=0
         }
 
         const reponse_b=document.getElementById('Tokyo')
@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("c'est une bonne reponse")
             document.getElementById('resultat1').textContent = "Bravo , c'est une bonne reponse !"
             document.getElementById('resultat1').style.color="green"
-            resultat += 1
+            resultat +=1
 
         }
         const reponse_c=document.getElementById('Okinawa')
         if(reponse_c.checked === true )
         {
             console.log("C'est une mauvaise reponse")
-            document.getElementById('resultat1').textContent="c'est une mauvaise reponse"
+            document.getElementById('resultat1').textContent="C'est une mauvaise reponse !"
             document.getElementById('resultat1').style.color = "red"
-            resultat=0
+            resultat +=0
         }
         const reponse_a2=document.getElementById('reponse1')
         const reponse_c2=document.getElementById('reponse3')
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if ( reponse_b2.checked=== true || reponse_d2.checked===true)
         {
             console.log("C'est une mauvaise reponse")
-            document.getElementById('resultat2').textContent="c'est une mauvaise reponse"
+            document.getElementById('resultat2').textContent="C'est une mauvaise reponse !"
             document.getElementById('resultat2').style.color = "red"
-            resultat=0
+            resultat +=0
         }
         document.getElementById('final').textContent= "NOTE FINALE : " + resultat +"/2"
         document.getElementById('final').style.color = "red"
